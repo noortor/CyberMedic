@@ -1,14 +1,19 @@
-﻿[System.Serializable]
+﻿using System.Collections;
+using System.Collections.Generic;
+
+[System.Serializable]
 public class DialogueFrame
 {
     public string id;
-    public string portrait;
+    public string name;
     public string lines;
-    public bool isChoice;
-    public string[] choiceDestinations;
-    public string nextFrame;
-    public bool isMetaFrame;
+    public string[] choices;
+    public string[] paths;
+    public Dictionary<string, string> choiceMappings;
+
+
+    /* public bool isMetaFrame;
     public string[] frames;
     public string[] conditions;
-    public string setFlag;
+    public string setFlag; */
 }

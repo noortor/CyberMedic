@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class DialogueManager : MonoBehaviour
 {
-
+    [SerializeField]
+    private DialogueLoader loader;
     private DialogueFrame currentDialogueFrame;
     private GameObject dialogueBox;
     private static DialogueManager _instance;
@@ -20,6 +21,16 @@ public class DialogueManager : MonoBehaviour
         {
             _instance = this;
         }
+    }
+
+    private void triggerDialogue(string characterName)
+    {
+
+    }
+
+    private void startDialogue(string id)
+    {
+
     }
 
 }

@@ -1,0 +1,135 @@
+{
+    "dialogueFrameList": [
+        {
+            "id": "xavier1_1",
+            "name": "Xavier",
+            "lines": "Greetings, MEDIC. It's a pleasure to meet you, and I hope our exchange today will be a fruitful one.",
+            "choices": [
+                "default"
+            ],
+            "paths": [
+                "xavier1_2"
+            ]
+        },
+        {
+            "id": "xavier1_2",
+            "name": "Xavier",
+            "lines": "My name's Xavier Blanc and I'm the CEO of Chatsubo Corp, the finest synthetic meat manufacturer around. You'd do well not to forget that name. I'm certain you've seen our products in stores, although it might be a little out of your price range...",
+            "choices": [
+                "I've never heard of it.",
+                "It must not be that popular, then."
+            ],
+            "paths": [
+                "xavier1_3",
+                "xavier1_3"
+            ]
+        },
+        {
+            "id": "xavier1_3",
+            "name": "Xavier",
+            "lines": "See that's just the thing. Keep this between you and me, but business has been pretty dogshit... I'm meeting a competitor at their production plant tomorrow, and I'd quite like to see exactly \"how the sausage is made.\" The synthetic sausage, so to speak.",
+            "choices": [
+                "I'll do it for 100 credits.",
+                "..."
+            ],
+            "paths": [
+                "xavier1_4",
+                "xavier1_5"
+            ]
+        },
+        {
+            "id": "xavier1_4",
+            "name": "Xavier",
+            "lines": "Excellent, my friend! I have absolute faith in you.",
+            "choices": [
+                "default"
+            ],
+            "paths": [
+                "xavier1_end"
+            ]
+        },
+        {
+            "id": "xavier1_5",
+            "name": "Xavier",
+            "lines": "I can see you're a bit hesitant about this transaction. Business isn't booming but I'm certainly not strapped for cash. How does a bonus sound to you? Let's find a solution that's beneficial to both of us, yes?",
+            "choices": [
+                "I'm sorry, I cannot help you.",
+                "Not so beneficial to your competitors."
+            ],
+            "paths": [
+                "xavier1_6",
+                "xavier1_7"
+            ]
+        },
+        {
+            "id": "xavier1_6",
+            "name": "Xavier",
+            "lines": "Well then, MEDIC. Something tells me you're going to regret that decision.",
+            "choices": [
+                "default"
+            ],
+            "paths": [
+                "xavier1_end"
+            ]
+        },
+        {
+            "id": "xavier1_7",
+            "name": "Xavier",
+            "lines": "Listen, MEDIC... my competitors at CARNI-TECH are simple people. They only care about lining their pockets. Don't even get me started on that asinine founder Petrov.",
+            "choices": [
+                "default"
+            ],
+            "paths": [
+                "xavier1_8"
+            ]
+        },
+        {
+            "id": "xavier1_8",
+            "name": "Xavier",
+            "lines": "If you help my corporation \"discover\" their trade secret before it's patented, we'll be able to feed a lot more people like yourself. When's the last time you had a nice, juicy synth steak?",
+            "choices": [
+                "I'll do it.",
+                "...",
+                "Sorry, I prefer my synthetic meant to be ethically sourced. Try coming up with your own ideas for a change."
+            ],
+            "paths": [
+                "xavier1_9",
+                "xavier1_10",
+                "xavier1_11"
+            ]
+        },
+        {
+            "id": "xavier1_9",
+            "name": "Xavier",
+            "lines": "Excellent choice. I have absolute faith in you. This decision's gonna help a lot of people.",
+            "choices": [
+                "default"
+            ],
+            "paths": [
+                "xavier1_end"
+            ]
+        },
+        {
+            "id": "xavier1_10",
+            "name": "Xavier",
+            "lines": "You're not going to regret helping me. We're gonna feed a lot of hungry mouths with this new technology.",
+            "choices": [
+                "default"
+            ],
+            "paths": [
+                "xavier1_end"
+            ]
+        },
+        {
+            "id": "xavier1_11",
+            "name": "Xavier",
+            "lines": "And maybe you should try being a little more respectful to the customers who are paying your rent, hm? How about that? Trust me, MEDIC, you're gonna wish you took this job.",
+            "choices": [
+                "default"
+            ],
+            "paths": [
+                "xavier1_end"
+            ]
+        }
+    ]
+}
