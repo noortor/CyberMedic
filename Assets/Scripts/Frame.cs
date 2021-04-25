@@ -1,14 +1,14 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 [System.Serializable]
-public class DialogueFrame
+public class Frame
 {
     public string id;
     public string name;
     public string lines;
     public string[] choices;
     public string[] paths;
+    public string portrait;
     public Dictionary<string, string> choiceMappings;
 
 
