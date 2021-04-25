@@ -1,5 +1,5 @@
 {
-    "dialogueFrameList": [
+    "frameList": [
         {
             "id": "xavier1_1",
             "name": "Xavier",
@@ -9,7 +9,8 @@
             ],
             "paths": [
                 "xavier1_2"
-            ]
+            ],
+            "portrait": "idle"
         },
         {
             "id": "xavier1_2",
@@ -22,7 +23,8 @@
             "paths": [
                 "xavier1_3",
                 "xavier1_3"
-            ]
+            ],
+            "portrait": "idle"
         },
         {
             "id": "xavier1_3",
@@ -35,7 +37,8 @@
             "paths": [
                 "xavier1_4",
                 "xavier1_5"
-            ]
+            ],
+            "portrait": "bargain"
         },
         {
             "id": "xavier1_4",
@@ -46,7 +49,8 @@
             ],
             "paths": [
                 "xavier1_end"
-            ]
+            ],
+            "portrait": "happy"
         },
         {
             "id": "xavier1_5",
@@ -59,7 +63,8 @@
             "paths": [
                 "xavier1_6",
                 "xavier1_7"
-            ]
+            ],
+            "portrait": "bargain"
         },
         {
             "id": "xavier1_6",
@@ -70,7 +75,8 @@
             ],
             "paths": [
                 "xavier1_end"
-            ]
+            ],
+            "portrait": "disappointed"
         },
         {
             "id": "xavier1_7",
@@ -81,7 +87,8 @@
             ],
             "paths": [
                 "xavier1_8"
-            ]
+            ],
+            "portrait": "disappointed"
         },
         {
             "id": "xavier1_8",
@@ -96,7 +103,8 @@
                 "xavier1_9",
                 "xavier1_10",
                 "xavier1_11"
-            ]
+            ],
+            "portrait": "bargain"
         },
         {
             "id": "xavier1_9",
@@ -107,7 +115,8 @@
             ],
             "paths": [
                 "xavier1_end"
-            ]
+            ],
+            "portrait": "happy"
         },
         {
             "id": "xavier1_10",
@@ -118,7 +127,8 @@
             ],
             "paths": [
                 "xavier1_end"
-            ]
+            ],
+            "portrait": "happy"
         },
         {
             "id": "xavier1_11",
@@ -129,7 +139,8 @@
             ],
             "paths": [
                 "xavier1_end"
-            ]
+            ],
+            "portrait": "disappointed"
         }
     ]
 }
