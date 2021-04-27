@@ -48,10 +48,7 @@ public class DialogueManager : MonoBehaviour
 
     public void Update()
     {
-        if (Input.GetMouseButtonDown(0) && currentFrame.choices.Length == 1)
-        {
-            advanceFrame();
-        }
+
     }
 
     /*
@@ -65,29 +62,56 @@ public class DialogueManager : MonoBehaviour
         updateSprite();
     }
 
+    public void advanceDisplay()
+    {
+        if (currentFrame.choices.Length == 1)
+        {
+            advanceFrame("default");
+        }
+        else
+        {
+            string choice = choiceButtons.GetComponent<DialogueChoiceButtons>().getChoiceMade();
+            if (choice.Equals(""))
+            {
+                switchToChoices();
+            }
+            else
+            {
+                switchToDialogue();
+                advanceFrame(choice);
+            }
+        }
+    }
+
     /*
     */
-    private void advanceFrame()
+    private void advanceFrame(string choice)
     {
-        setNextFrame("default");
+        string nextId = currentFrame.choiceMappings[choice];
+        currentFrame = frameLoader.getFrame(nextId);
         textBox.text = currentFrame.lines;
         nameBox.text = currentFrame.name;
         updateSprite();
     }
 
-    private void setNextFrame(string choice)
-    {
-        currentFrame = frameLoader.getFrame(currentFrame.choiceMappings[choice]);
-
-    }
 
     private void updateSprite()
     {
         portrait.sprite = imageLoader.getSprite(currentFrame.name + "_" + currentFrame.portrait);
     }
 
-    private void setDialogueVisibility(bool isVisible)
+    public void switchToChoices()
     {
-        dialogueBox.SetActive(isVisible);
+        dialogueBox.SetActive(false);
+        choiceButtons.GetComponent<DialogueChoiceButtons>().loadButtons(currentFrame.choices);
     }
+
+    public void switchToDialogue()
+    {
+        dialogueBox.SetActive(true);
+        choiceButtons.GetComponent<DialogueChoiceButtons>().unLoadButtons();
+        choiceButtons.GetComponent<DialogueChoiceButtons>().setChoiceMade("", false);
+    }
+
+
 }
