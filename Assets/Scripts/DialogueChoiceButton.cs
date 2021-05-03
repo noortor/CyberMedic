@@ -12,6 +12,7 @@ public class DialogueChoiceButton : MonoBehaviour, IPointerEnterHandler, IPointe
     void Awake()
     {
         dialogueChoiceButtons = GameObject.Find("Choice Buttons");
+        GetComponent<Button>().onClick.AddListener(makeChoice);
     }
 
     // Update is called once per frame
@@ -29,7 +30,7 @@ public class DialogueChoiceButton : MonoBehaviour, IPointerEnterHandler, IPointe
     {
         this.GetComponent<SpriteRenderer>().color = Color.white;
     }
-    public void OnPointerClick(PointerEventData eventData)
+    public void makeChoice()
     {
         this.GetComponent<SpriteRenderer>().color = Color.white;
         dialogueChoiceButtons.GetComponent<DialogueChoiceButtons>().setChoiceMade(getChoiceText(), true);
@@ -44,6 +45,11 @@ public class DialogueChoiceButton : MonoBehaviour, IPointerEnterHandler, IPointe
     public string getChoiceText()
     {
         return gameObject.GetComponentInChildren<TextMeshPro>().text;
+    }
+
+    private void hi()
+    {
+        Debug.Log('hi');
     }
 
 }
