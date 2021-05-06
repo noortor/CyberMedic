@@ -5,13 +5,20 @@ using UnityEngine.EventSystems;
 using TMPro;
 using UnityEngine;
 
-public class DialogueChoiceButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
+public class DialogueChoiceButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
+    public readonly Color GREEN = new Color(0.484375f, 0.70703125f, 0.64453125f, 1);
+    private DialogueManager dialogueManager;
     private GameObject dialogueChoiceButtons;
+    private Image image;
+    private TextMeshProUGUI buttonText;
     // Start is called before the first frame update
     void Awake()
     {
+        dialogueManager = GameObject.Find("Dialogue Manager").GetComponent<DialogueManager>();
         dialogueChoiceButtons = GameObject.Find("Choice Buttons");
+        image = this.GetComponent<Image>();
+        buttonText = this.GetComponentInChildren<TextMeshProUGUI>();
         GetComponent<Button>().onClick.AddListener(makeChoice);
     }
 
@@ -23,33 +30,28 @@ public class DialogueChoiceButton : MonoBehaviour, IPointerEnterHandler, IPointe
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        this.GetComponent<SpriteRenderer>().color = new Color(0.484375f, 0.70703125f, 0.64453125f, 1);
+        image.color = GREEN;
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        this.GetComponent<SpriteRenderer>().color = Color.white;
+        image.color = Color.white;
     }
     public void makeChoice()
     {
-        this.GetComponent<SpriteRenderer>().color = Color.white;
-        dialogueChoiceButtons.GetComponent<DialogueChoiceButtons>().setChoiceMade(getChoiceText(), true);
+        image.color = Color.white;
+        dialogueManager.advanceFrame(buttonText.text);
     }
 
 
     public void setChoiceText(string choice)
     {
-        gameObject.GetComponentInChildren<TextMeshPro>().text = choice;
+        buttonText.text = choice;
     }
 
     public string getChoiceText()
     {
-        return gameObject.GetComponentInChildren<TextMeshPro>().text;
-    }
-
-    private void hi()
-    {
-        Debug.Log('hi');
+        return buttonText.text;
     }
 
 }

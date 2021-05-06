@@ -11,7 +11,10 @@ public class Frame
     public string portrait;
     public Dictionary<string, string> choiceMappings;
 
-
+    public bool isChoiceFrame()
+    {
+        return choices.Length != 1;
+    }
     /* public bool isMetaFrame;
     public string[] frames;
     public string[] conditions;

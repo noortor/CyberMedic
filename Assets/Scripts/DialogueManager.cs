@@ -14,8 +14,6 @@ public class DialogueManager : MonoBehaviour
     private static DialogueManager _instance;
     private GameObject dialogueBox;
     private GameObject choiceButtons;
-    private TextMeshPro nameBox;
-    private TextMeshPro textBox;
 
     private SpriteRenderer portrait;
     public static DialogueManager Instance { get { return _instance; } }
@@ -34,8 +32,6 @@ public class DialogueManager : MonoBehaviour
         choiceButtons = GameObject.Find("Choice Buttons");
 
         portrait = GameObject.Find("Portrait").GetComponent<SpriteRenderer>();
-        textBox = GameObject.Find("Dialogue Text").GetComponent<TextMeshPro>();
-        nameBox = GameObject.Find("Name Box").GetComponent<TextMeshPro>();
 
         frameLoader = new FrameLoader();
         imageLoader = new ImageLoader();
@@ -57,40 +53,30 @@ public class DialogueManager : MonoBehaviour
     private void startDialogue(string id)
     {
         currentFrame = frameLoader.getFrame(id);
-        textBox.text = currentFrame.lines;
-        nameBox.text = currentFrame.name;
+        switchToDialogue();
+        Debug.Log("starting dialogue");
+        dialogueBox.GetComponent<DialogueBox>().updateBoxContent(currentFrame.name, currentFrame.lines);
         updateSprite();
-    }
-
-    public void advanceDisplay()
-    {
-        if (currentFrame.choices.Length == 1)
-        {
-            advanceFrame("default");
-        }
-        else
-        {
-            string choice = choiceButtons.GetComponent<DialogueChoiceButtons>().getChoiceMade();
-            if (choice.Equals(""))
-            {
-                switchToChoices();
-            }
-            else
-            {
-                switchToDialogue();
-                advanceFrame(choice);
-            }
-        }
     }
 
     /*
     */
-    private void advanceFrame(string choice)
+    public void advanceFrame(string choice)
     {
         string nextId = currentFrame.choiceMappings[choice];
         currentFrame = frameLoader.getFrame(nextId);
-        textBox.text = currentFrame.lines;
-        nameBox.text = currentFrame.name;
+        if (currentFrame.isChoiceFrame())
+        {
+            switchToChoices();
+            // Debug.Log(choiceButtons);
+            // Debug.Log(choiceButtons.GetComponent<DialogueChoiceButtons>());
+            choiceButtons.GetComponent<DialogueChoiceButtons>().loadButtons(currentFrame.choices);
+        }
+        else
+        {
+            switchToDialogue();
+            dialogueBox.GetComponent<DialogueBox>().updateBoxContent(currentFrame.name, currentFrame.lines);
+        }
         updateSprite();
     }
 
@@ -103,14 +89,13 @@ public class DialogueManager : MonoBehaviour
     public void switchToChoices()
     {
         dialogueBox.SetActive(false);
-        choiceButtons.GetComponent<DialogueChoiceButtons>().loadButtons(currentFrame.choices);
+        choiceButtons.SetActive(true);
     }
 
     public void switchToDialogue()
     {
         dialogueBox.SetActive(true);
-        choiceButtons.GetComponent<DialogueChoiceButtons>().unLoadButtons();
-        choiceButtons.GetComponent<DialogueChoiceButtons>().setChoiceMade("", false);
+        choiceButtons.SetActive(false);
     }
 
 
