@@ -15,6 +15,8 @@ public class DialogueManager : MonoBehaviour
     private GameObject dialogueBox;
     private GameObject choiceButtons;
 
+    private GameManager gameManager;
+
     private SpriteRenderer portrait;
     public static DialogueManager Instance { get { return _instance; } }
     private void Awake()
@@ -37,9 +39,8 @@ public class DialogueManager : MonoBehaviour
         imageLoader = new ImageLoader();
         frameLoader.Load();
         imageLoader.Load();
-
-        //temporary
-        startDialogue(SceneManager.GetActiveScene().name);
+        gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
+        startDialogue(gameManager.getScene());
     }
 
     public void Update()
@@ -54,7 +55,6 @@ public class DialogueManager : MonoBehaviour
     {
         currentFrame = frameLoader.getFrame(id);
         switchToDialogue();
-        Debug.Log("starting dialogue");
         dialogueBox.GetComponent<DialogueBox>().updateBoxContent(currentFrame.name, currentFrame.lines);
         updateSprite();
     }
@@ -68,8 +68,6 @@ public class DialogueManager : MonoBehaviour
         if (currentFrame.isChoiceFrame())
         {
             switchToChoices();
-            // Debug.Log(choiceButtons);
-            // Debug.Log(choiceButtons.GetComponent<DialogueChoiceButtons>());
             choiceButtons.GetComponent<DialogueChoiceButtons>().loadButtons(currentFrame.choices);
         }
         else

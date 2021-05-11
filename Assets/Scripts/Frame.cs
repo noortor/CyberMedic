@@ -13,7 +13,7 @@ public class Frame
 
     public bool isChoiceFrame()
     {
-        return choices.Length != 1;
+        return choices.Length != 1 || (!choices[0].Equals("default"));
     }
     /* public bool isMetaFrame;
     public string[] frames;

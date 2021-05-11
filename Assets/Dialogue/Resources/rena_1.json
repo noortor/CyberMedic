@@ -1,0 +1,392 @@
+{
+    "frameList": [
+        {
+            "id": "rena1_1",
+            "name": "Rena",
+            "lines": "MEDIC? You here? Johnny told me about your shop. It's been so long, I can't stop smiling. You look good, MEDIC.",
+            "choices": [
+                "default"
+            ],
+            "paths": [
+                "rena1_2"
+            ],
+            "portrait": "idle"
+        },
+        {
+            "id": "rena1_2",
+            "name": "Rena",
+            "lines": "",
+            "choices": [
+                "What are you doing on this side of town, Rena?"
+            ],
+            "paths": [
+                "rena1_3"
+            ],
+            "portrait": "idle"
+        },
+        {
+            "id": "rena1_3",
+            "name": "Rena",
+            "lines": "It's been difficult, these past few years. Yeah, I've got a job, but at this point, maybe I'd rather be on the streets. Just the other day- ",
+            "choices": [
+                "default"
+            ],
+            "paths": [
+                "rena1_4"
+            ],
+            "portrait": "idle"
+        },
+        {
+            "id": "rena1_4",
+            "name": "Rena",
+            "lines": "Listen, I know we aren't on the best of terms, but I really need this arm. It's hard to work like this... less efficient. If I can't meet my quota, the boss is gonna...",
+            "choices": [
+                "default"
+            ],
+            "paths": [
+                "rena1_5"
+            ],
+            "portrait": "bargain"
+        },
+        {
+            "id": "rena1_5",
+            "name": "Rena",
+            "lines": "",
+            "choices": [
+                "Rena, I wanna help you. God, I really do. But right now, I just don't have the parts.",
+                "I hear you, Rena. Let me help. What kind of arm do you have in mind?",
+                "We haven't spoken in years, and you're asking me for favors? I'm sorry about your arm, I really am. I'm in some trouble myself, so you're gonna have to offer me a lot more than sob stories if you want that arm."
+            ],
+            "paths": [
+                "rena1_6",
+                "rena1_7",
+                "rena1_8"
+            ],
+            "portrait": "bargain"
+        },
+        {
+            "id": "rena1_6",
+            "name": "Rena",
+            "lines": "I thought that'd be the case...",
+            "choices": [
+                "default"
+            ],
+            "paths": [
+                "rena1_9"
+            ],
+            "portrait": "happy"
+        },
+        {
+            "id": "rena1_7",
+            "name": "Rena",
+            "lines": "I've been scrapping for a while now. With all the accidents happening lately, I was able to find these bits before they were taken to the recycling yard. Think you can work with these?",
+            "choices": [
+                "default"
+            ],
+            "paths": [
+                "rena1_10"
+            ],
+            "portrait": "bargain"
+        },
+        {
+            "id": "rena1_8",
+            "name": "Rena",
+            "lines": "Parts! I have some parts... Credits, too. Whatever you need.",
+            "choices": [
+                "default"
+            ],
+            "paths": [
+                "rena1_11"
+            ],
+            "portrait": "bargain"
+        },
+        {
+            "id": "rena1_9",
+            "name": "Rena",
+            "lines": "See I've got most of the pieces, I just need someone to put them together.",
+            "choices": [
+                "default"
+            ],
+            "paths": [
+                "rena1_12"
+            ],
+            "portrait": "disappointed"
+        },
+        {
+            "id": "rena1_10",
+            "name": "Rena",
+            "lines": "",
+            "choices": [
+                "Shouldn't be too hard, but these parts are pretty old. I can't guarantee quality..."
+            ],
+            "paths": [
+                "rena1_13"
+            ],
+            "portrait": "disappointed"
+        },
+        {
+            "id": "rena1_11",
+            "name": "Rena",
+            "lines": "Please, MEDIC. I'm so sorry about what I did to you... It was the only way to pay off my debt. It was wrong. I'm sorry.",
+            "choices": [
+                "default"
+            ],
+            "paths": [
+                "rena1_14"
+            ],
+            "portrait": "bargain"
+        },
+        {
+            "id": "rena1_12",
+            "name": "Rena",
+            "lines": "",
+            "choices": [
+                "Rena, I want to help, but right now... I just can't. No promises, but if you come back next month, I might be able to fix you up.",
+                "I'll try my best."
+            ],
+            "paths": [
+                "rena1_15",
+                "rena1_13"
+            ],
+            "portrait": "bargain"
+        },
+        {
+            "id": "rena1_13",
+            "name": "Rena",
+            "lines": "Whatever you can do, I appreciate it...",
+            "choices": [
+                "default"
+            ],
+            "paths": [
+                "rena1_16"
+            ],
+            "portrait": "bargain"
+        },
+        {
+            "id": "rena1_14",
+            "name": "Rena",
+            "lines": "",
+            "choices": [
+                "Listen, I've been there too. In fact, I'm there right now. I wish I could help, but I just can't.",
+                "Don't pull that shit on me, I know what you're trying."
+            ],
+            "paths": [
+                "rena1_17",
+                "rena1_18"
+            ],
+            "portrait": "bargain"
+        },
+        {
+            "id": "rena1_15",
+            "name": "Rena",
+            "lines": "But!-... Thank you, MEDIC. Hold onto those parts for me, will you? ",
+            "choices": [
+                "default"
+            ],
+            "paths": [
+                "rena1_19"
+            ],
+            "portrait": "bargain"
+        },
+        {
+            "id": "rena1_16",
+            "name": "Rena",
+            "lines": "",
+            "choices": [
+                "Don't mention it.",
+                "I just hope you'll stay in one piece this time."
+            ],
+            "paths": [
+                "rena1_20",
+                "rena1_21"
+            ],
+            "portrait": "bargain"
+        },
+        {
+            "id": "rena1_17",
+            "name": "Rena",
+            "lines": "I understand why you wouldn't trust me, but I really need the help. There's nothing you can do?",
+            "choices": [
+                "default"
+            ],
+            "paths": [
+                "rena1_22"
+            ],
+            "portrait": "bargain"
+        },
+        {
+            "id": "rena1_18",
+            "name": "Rena",
+            "lines": "The only thing I'm trying to do is get that arm. I know you don't trust me, but there's nothing you can do?",
+            "choices": [
+                "default"
+            ],
+            "paths": [
+                "rena1_23"
+            ],
+            "portrait": "happy"
+        },
+        {
+            "id": "rena1_19",
+            "name": "Rena",
+            "lines": "",
+            "choices": [
+                "Sure, why not?",
+                "You can count on me."
+            ],
+            "paths": [
+                "rena1_24",
+                "rena1_24"
+            ],
+            "portrait": "happy"
+        },
+        {
+            "id": "rena1_20",
+            "name": "Rena",
+            "lines": "Also, I wanted to apologize. What I did to you... It was the only way to pay off my debt. It was wrong. I'm sorry.",
+            "choices": [
+                "default"
+            ],
+            "paths": [
+                "rena1_25"
+            ],
+            "portrait": "disappointed"
+        },
+         {
+            "id": "rena1_21",
+            "name": "Rena",
+            "lines": "You and me both.",
+            "choices": [
+                "default"
+            ],
+            "paths": [
+                "rena1_20"
+            ],
+            "portrait": "happy"
+        },
+        {
+            "id": "rena1_22",
+            "name": "Rena",
+            "lines": "",
+            "choices": [
+                "I can try to figure something out but these parts are old. Don't come crying if it doesn't work. ",
+                "I'm not changing my mind, Rena. You're gonna have to find someone else."
+            ],
+            "paths": [
+                "rena1_26",
+                "rena1_27"
+            ],
+            "portrait": "idle"
+        },
+        {
+            "id": "rena1_23",
+            "name": "Rena",
+            "lines": "",
+            "choices": [
+                "I'm not changing my mind, Rena. You're gonna have to find someone else."
+            ],
+            "paths": [
+                "rena1_27"
+            ],
+            "portrait": "idle"
+        },
+        {
+            "id": "rena1_24",
+            "name": "Rena",
+            "lines": "Alright then. See you around...",
+            "choices": [
+                "default"
+            ],
+            "paths": [
+                "rena1_end"
+            ],
+            "portrait": "idle"
+        },
+        {
+            "id": "rena1_25",
+            "name": "Rena",
+            "lines": "",
+            "choices": [
+                "Why you did it's none of my business. I'll get you that arm.",
+                "Listen, Rena. It was a long time ago. I'd have done the same."
+            ],
+            "paths": [
+                "rena1_28",
+                "rena1_28"
+            ],
+            "portrait": "idle"
+        },
+        {
+            "id": "rena1_26",
+            "name": "Rena",
+            "lines": "Whatever you can do, I appreciate it...",
+            "choices": [
+                "default"
+            ],
+            "paths": [
+                "rena1_29"
+            ],
+            "portrait": "idle"
+        },
+        {
+            "id": "rena1_27",
+            "name": "Rena",
+            "lines": "...",
+            "choices": [
+                "default"
+            ],
+            "paths": [
+                "rena1_end"
+            ],
+            "portrait": "idle"
+        },
+        {
+            "id": "rena1_28",
+            "name": "Rena",
+            "lines": "Thanks for understanding. I'll be looking forward to that arm.",
+            "choices": [
+                "default"
+            ],
+            "paths": [
+                "rena1_end"
+            ],
+            "portrait": "idle"
+        },
+        {
+            "id": "rena1_29",
+            "name": "Rena",
+            "lines": "",
+            "choices": [
+                "Just try to stay in one piece this time."
+            ],
+            "paths": [
+                "rena1_30"
+            ],
+            "portrait": "idle"
+        },
+        {
+            "id": "rena1_30",
+            "name": "Rena",
+            "lines": "I'll do my best.",
+            "choices": [
+                "default"
+            ],
+            "paths": [
+                "rena1_end"
+            ],
+            "portrait": "idle"
+        },
+        {
+            "id": "rena1_end",
+            "name": "Rena",
+            "lines": "",
+            "choices": [
+                ""
+            ],
+            "paths": [
+                ""
+            ],
+            "portrait": "idle"
+        }
+    ]
+}

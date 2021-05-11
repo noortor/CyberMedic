@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance = null;
+    private string scene;
 
     private void Awake()
     {
@@ -18,18 +19,25 @@ public class GameManager : MonoBehaviour
             Destroy(this.gameObject);
         }
         DontDestroyOnLoad(gameObject);
+        scene = "";
     }
 
     public void StartGame()
     {
         SceneManager.LoadScene("TitleScene");
     }
-    public void EnterDialogueScene()
+    public void EnterDialogueScene(string sceneName)
     {
-        SceneManager.LoadScene("xavier1_1");
+        scene = sceneName;
+        SceneManager.LoadScene("Dialogue");
     }
     public void EnterEndScene()
     {
         SceneManager.LoadScene("EndScene");
+    }
+
+    public string getScene()
+    {
+        return scene;
     }
 }

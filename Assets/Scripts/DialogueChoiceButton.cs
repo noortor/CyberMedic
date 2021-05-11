@@ -9,14 +9,12 @@ public class DialogueChoiceButton : MonoBehaviour, IPointerEnterHandler, IPointe
 {
     public readonly Color GREEN = new Color(0.484375f, 0.70703125f, 0.64453125f, 1);
     private DialogueManager dialogueManager;
-    private GameObject dialogueChoiceButtons;
     private Image image;
     private TextMeshProUGUI buttonText;
     // Start is called before the first frame update
     void Awake()
     {
         dialogueManager = GameObject.Find("Dialogue Manager").GetComponent<DialogueManager>();
-        dialogueChoiceButtons = GameObject.Find("Choice Buttons");
         image = this.GetComponent<Image>();
         buttonText = this.GetComponentInChildren<TextMeshProUGUI>();
         GetComponent<Button>().onClick.AddListener(makeChoice);
