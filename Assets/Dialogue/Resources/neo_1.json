@@ -57,7 +57,7 @@
             "name": "Neo",
             "lines": "",
             "choices": [
-                "Fine then, but make it quick"
+                "Fine then, but make it quick."
             ],
             "paths": [
                 "neo1_6"
@@ -155,7 +155,7 @@
         {
             "id": "neo1_13",
             "name": "Neo",
-            "lines": "I'll tell you loud and proud",
+            "lines": "I'll tell you loud and proud.",
             "choices": [
                 "default"
             ],
@@ -179,7 +179,7 @@
         {
             "id": "neo1_15",
             "name": "Neo",
-            "lines": "I'm gonna kill that son-of-a-bitch Xavier fucking Blanc.",
+            "lines": "I'm gonna kill that son-of-a-bitch Xavier fucking Blanc!",
             "choices": [
                 "default"
             ],
@@ -239,7 +239,7 @@
         {
             "id": "neo1_20",
             "name": "Neo",
-            "lines": "Human, MEDIC. It's human meat",
+            "lines": "Human, MEDIC. It's human meat.",
             "choices": [
                 "default"
             ],
