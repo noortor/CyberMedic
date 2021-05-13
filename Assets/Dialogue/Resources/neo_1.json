@@ -1,0 +1,340 @@
+{
+    "frameList": [
+        {
+            "id": "neo1_1",
+            "name": "Neo",
+            "lines": "Neither of us have much time, so you're gonna have to listen up.",
+            "choices": [
+                "default"
+            ],
+            "paths": [
+                "neo1_2"
+            ],
+            "portrait": "bargaining"
+        },
+        {
+            "id": "neo1_2",
+            "name": "Neo",
+            "lines": "",
+            "choices": [
+                "Hold on. I know who you are. I don't work with criminals here.",
+                "Wait a minute, I recognize you. You're NEO, that vigilante who escaped the complex.",
+                "... I'm listening."
+            ],
+            "paths": [
+                "neo1_3",
+                "neo1_4",
+                "neo1_4"
+            ],
+            "portrait": "bargaining"
+        },
+        {
+            "id": "neo1_3",
+            "name": "Neo",
+            "lines": "You're a criminal yourself operating without a license. You're gonna do exactly what I say, or else we're both gonna be in some serious trouble.",
+            "choices": [
+                "default"
+            ],
+            "paths": [
+                "neo1_5"
+            ],
+            "portrait": "disappointed"
+        },
+        {
+            "id": "neo1_4",
+            "name": "Neo",
+            "lines": "I'm gonna keep this short.",
+            "choices": [
+                "default"
+            ],
+            "paths": [
+                "neo1_6"
+            ],
+            "portrait": "idle"
+        },
+        {
+            "id": "neo1_5",
+            "name": "Neo",
+            "lines": "",
+            "choices": [
+                "Fine then, but make it quick."
+            ],
+            "paths": [
+                "neo1_6"
+            ],
+            "portrait": "disappointed"
+        },
+        {
+            "id": "neo1_6",
+            "name": "Neo",
+            "lines": "If you can't help me, I'll be dead in an hour. Those fucking pigs put me behind bars. They opened me up, put something inside my heart. Right now, I can feel it in my chest. Like an itch. It wants out.",
+            "choices": [
+                "default"
+            ],
+            "paths": [
+                "neo1_7"
+            ],
+            "portrait": "disappointed"
+        },
+        {
+            "id": "neo1_7",
+            "name": "Neo",
+            "lines": "",
+            "choices": [
+                "Ventricular fibrilation. I heard it's a new security measure. Triggering high-voltage electric shocks in escapees.",
+                "You need a heart."
+            ],
+            "paths": [
+                "neo1_8",
+                "neo1_9"
+            ],
+            "portrait": "disappointed"
+        },
+        {
+            "id": "neo1_8",
+            "name": "Neo",
+            "lines": "So that's what it is, those fucking pigs! Protecting their own, making our lives a living hell.",
+            "choices": [
+                "default"
+            ],
+            "paths": [
+                "neo1_10"
+            ],
+            "portrait": "bargaining"
+        },
+        {
+            "id": "neo1_9",
+            "name": "Neo",
+            "lines": "Exactly. A new heart. So what's your deal? Can you help me or not?",
+            "choices": [
+                "default"
+            ],
+            "paths": [
+                "neo1_11"
+            ],
+            "portrait": "bargaining"
+        },
+        {
+            "id": "neo1_10",
+            "name": "Neo",
+            "lines": "",
+            "choices": [
+                "Protecting their own?"
+            ],
+            "paths": [
+                "neo1_12"
+            ],
+            "portrait": "bargaining"
+        },
+        {
+            "id": "neo1_11",
+            "name": "Neo",
+            "lines": "",
+            "choices": [
+                "If I help you, what will you do next?",
+                "What's gonna happen if I don't help you?"
+            ],
+            "paths": [
+                "neo1_13",
+                "neo1_14"
+            ],
+            "portrait": "bargaining"
+        },
+        {
+            "id": "neo1_12",
+            "name": "Neo",
+            "lines": "You really don't know? The complex and Chatsubo Corp are in bed together. Help me out with that heart. I'll tell you what I'm gonna do.",
+            "choices": [
+                "default"
+            ],
+            "paths": [
+                "neo1_15"
+            ],
+            "portrait": "happy"
+        },
+        {
+            "id": "neo1_13",
+            "name": "Neo",
+            "lines": "I'll tell you loud and proud.",
+            "choices": [
+                "default"
+            ],
+            "paths": [
+                "neo1_15"
+            ],
+            "portrait": "disappointed"
+        },
+        {
+            "id": "neo1_14",
+            "name": "Neo",
+            "lines": "Listen, I can't make you do anything. But keeping me alive is in your best interest.",
+            "choices": [
+                "default"
+            ],
+            "paths": [
+                "neo1_16"
+            ],
+            "portrait": "idle"
+        },
+        {
+            "id": "neo1_15",
+            "name": "Neo",
+            "lines": "I'm gonna kill that son-of-a-bitch Xavier fucking Blanc!",
+            "choices": [
+                "default"
+            ],
+            "paths": [
+                "neo1_17"
+            ],
+            "portrait": "happy"
+        },
+        {
+            "id": "neo1_16",
+            "name": "Neo",
+            "lines": "",
+            "choices": [
+                "How so?"
+            ],
+            "paths": [
+                "neo1_15"
+            ],
+            "portrait": "idle"
+        },
+        {
+            "id": "neo1_17",
+            "name": "Neo",
+            "lines": "",
+            "choices": [
+                "Wait, what does any of this have to do with Chatsubo?"
+            ],
+            "paths": [
+                "neo1_18"
+            ],
+            "portrait": "happy"
+        },
+        {
+            "id": "neo1_18",
+            "name": "Neo",
+            "lines": "People disappearing, that mysterious illness. You think that \"synthetic meat\" they're selling is cruelty free?",
+            "choices": [
+                "default"
+            ],
+            "paths": [
+                "neo1_19"
+            ],
+            "portrait": "bargaining"
+        },
+        {
+            "id": "neo1_19",
+            "name": "Neo",
+            "lines": "",
+            "choices": [
+                "That meat... it's-"
+            ],
+            "paths": [
+                "neo1_20"
+            ],
+            "portrait": "bargaining"
+        },
+        {
+            "id": "neo1_20",
+            "name": "Neo",
+            "lines": "Human, MEDIC. It's human meat.",
+            "choices": [
+                "default"
+            ],
+            "paths": [
+                "neo1_21"
+            ],
+            "portrait": "idle"
+        },
+        {
+            "id": "neo1_21",
+            "name": "Neo",
+            "lines": "I'm not a \"good person\", but I know what I gotta do. So are you gonna help or not?",
+            "choices": [
+                "default"
+            ],
+            "paths": [
+                "neo1_22"
+            ],
+            "portrait": "bargaining"
+        },
+        {
+            "id": "neo1_22",
+            "name": "Neo",
+            "lines": "",
+            "choices": [
+                "How do I know you're telling the truth?",
+                "I'll do it, but we need to hurry. From the looks of it, you don't have much time left."
+            ],
+            "paths": [
+                "neo1_23",
+                "neo1_24"
+            ],
+            "portrait": "bargaining"
+        },
+        {
+            "id": "neo1_23",
+            "name": "Neo",
+            "lines": "How do you know anyone's telling the truth? Please... I don't have much time...",
+            "choices": [
+                "default"
+            ],
+            "paths": [
+                "neo1_25"
+            ],
+            "portrait": "disappointed"
+        },
+        {
+            "id": "neo1_24",
+            "name": "Neo",
+            "lines": "Thank you, MEDIC. Let's put an end to that Blanc bastard.",
+            "choices": [
+                "default"
+            ],
+            "paths": [
+                "neo1_end"
+            ],
+            "portrait": "happy"
+        },
+        {
+            "id": "neo1_25",
+            "name": "Neo",
+            "lines": "",
+            "choices": [
+                "I'm sorry. I just can't do it.",
+                "Alright. I'll do it."
+            ],
+            "paths": [
+                "neo1_26",
+                "neo1_24"
+            ],
+            "portrait": "disappointed"
+        },
+        {
+            "id": "neo1_26",
+            "name": "Neo",
+            "lines": "If nobody puts an end to this, it's never gonna stop. Remember that.",
+            "choices": [
+                "default"
+            ],
+            "paths": [
+                "neo1_end"
+            ],
+            "portrait": "disappointed"
+        },
+        {
+            "id": "neo1_end",
+            "name": "Neo",
+            "lines": "",
+            "choices": [
+                ""
+            ],
+            "paths": [
+                ""
+            ],
+            "portrait": "idle"
+        }
+    ]
+}

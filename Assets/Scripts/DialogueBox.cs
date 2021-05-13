@@ -14,7 +14,6 @@ public class DialogueBox : MonoBehaviour, IPointerClickHandler
     // Start is called before the first frame update
     void Awake()
     {
-        Debug.Log("running awake");
         dialogueManager = GameObject.Find("Dialogue Manager").GetComponent<DialogueManager>();
         dialogueText = GameObject.Find("Dialogue Text").GetComponent<TextMeshProUGUI>();
         nameText = GameObject.Find("Name Text").GetComponent<TextMeshProUGUI>();
@@ -28,8 +27,6 @@ public class DialogueBox : MonoBehaviour, IPointerClickHandler
 
     public void updateBoxContent(string name, string text)
     {
-        Debug.Log(nameText);
-        Debug.Log(dialogueText);
         nameText.text = name;
         dialogueText.text = text;
     }
