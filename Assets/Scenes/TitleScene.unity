@@ -485,7 +485,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Scene 3 - Person
+  m_text: Scene 3 - Neo
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2dcc70ee7749d486abdffe26e918db5f, type: 2}
   m_sharedMaterial: {fileID: 4892927964997350113, guid: 2dcc70ee7749d486abdffe26e918db5f,
@@ -977,7 +977,7 @@ GameObject:
   - component: {fileID: 1565410994}
   - component: {fileID: 1565410993}
   m_Layer: 5
-  m_Name: person1_1
+  m_Name: neo1_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
