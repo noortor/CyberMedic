@@ -59,13 +59,22 @@ public class DialogueManager : MonoBehaviour
         updateSprite();
     }
 
+    private void endDialogue()
+    {
+        gameManager.StartGame();
+    }
+
     /*
     */
     public void advanceFrame(string choice)
     {
         string nextId = currentFrame.choiceMappings[choice];
         currentFrame = frameLoader.getFrame(nextId);
-        if (currentFrame.isChoiceFrame())
+        if (currentFrame.isEndFrame())
+        {
+            endDialogue();
+        }
+        else if (currentFrame.isChoiceFrame())
         {
             switchToChoices();
             choiceButtons.GetComponent<DialogueChoiceButtons>().loadButtons(currentFrame.choices);

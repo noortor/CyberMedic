@@ -190,7 +190,7 @@
             ],
             "portrait": "disappointed"
         },
-         {
+        {
             "id": "xavier1_end",
             "name": "Xavier",
             "lines": "",
@@ -200,7 +200,7 @@
             "paths": [
                 ""
             ],
-            "portrait": ""
+            "portrait": "bargain"
         }
     ]
 }
