@@ -11,6 +11,8 @@ public class DialogueChoiceButton : MonoBehaviour, IPointerEnterHandler, IPointe
     private DialogueManager dialogueManager;
     private Image image;
     private TextMeshProUGUI buttonText;
+    [SerializeField]
+    private AudioClip audio;
     // Start is called before the first frame update
     void Awake()
     {
@@ -38,6 +40,7 @@ public class DialogueChoiceButton : MonoBehaviour, IPointerEnterHandler, IPointe
     public void makeChoice()
     {
         image.color = Color.white;
+        AudioSource.PlayClipAtPoint(audio, new Vector3(0, 0, 0));
         dialogueManager.advanceFrame(buttonText.text);
     }
 
